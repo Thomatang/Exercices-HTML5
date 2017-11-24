@@ -1,0 +1,39 @@
+body{
+  background-color: rgb(27,40,50);
+}
+.male td{
+  color: green;
+}
+
+.female td{
+  color: purple;
+}
+
+table{
+  width: 90%;
+	margin: 0 auto 50px auto;
+	border-collapse: collapse;
+	text-align: center;
+  border: solid black 2px;
+}
+
+thead td{
+  color:white;
+}
+
+thead{
+	font-weight: 700;
+	background-color: none;
+
+}
+
+tbody{
+	font-weight: 700;
+}
+tbody tr:nth-of-type(even){
+    background-color: grey;
+}
+
+tbody tr:nth-of-type(odd){
+    background-color: white;
+}
