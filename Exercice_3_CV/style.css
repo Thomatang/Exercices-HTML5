@@ -1,0 +1,82 @@
+table, td, tr {
+  border-collapse: collapse;
+  border: solid red 0px;
+  text-align: left;
+  margin-top: 10px;
+
+}
+
+div{
+  width: 840px;
+  height: 900px;
+}
+
+table{
+  width: 100%;
+}
+
+
+body{
+  color: black;
+  background-color: rgb(241,241,241);
+  font-family: sans-serif;
+}
+
+progress{
+  background-color: rgb(241,241,241);
+  border-radius: 9%;
+  width: 179px;
+  height: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: rgb(241,241,241);
+  border-radius: 9%;
+  width: 230px;
+  height: 10px;
+}
+progress::-webkit-progress-value {
+  background-color: rgb(48,146,205);
+  border-radius: 9%;
+  width: 179px;
+  height: 10px;
+}
+
+
+.leftcolumn{
+  padding: 0px;
+
+}
+
+#name {
+  font-size: 60px;
+  color: rgb(48,146,205);
+  text-align: left;
+  font-weight:bold;
+}
+
+#graphicwebdesigner{
+  font-size: 30px;
+  text-align: left;
+}
+
+.bigheader{
+  color: rgb(48,146,205);
+  font-size: 25px;
+}
+
+.smallheader{
+  color: rgb(48,146,205);
+  font-size: 20px;
+}
+
+.boldblack {
+  font-weight:bold;
+  font-size: 18px;
+}
+
+.width196{
+  width: 196px;
+}
+
+}
