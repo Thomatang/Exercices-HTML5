@@ -1,0 +1,75 @@
+body {
+        width: 1280px;
+        height: 3841px;
+        margin: 0;
+        border: solid pink 1px;
+      }
+
+header, footer,nav, div {
+              border: 1px solid black;
+              padding: 0.25em;
+              margin: 0.25em;
+              border-radius: 0.25em;
+            }
+
+
+
+header{
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header ul{
+  display: flex;
+
+}
+
+.logo{
+  
+}
+
+footer{
+  height: 63px;
+}
+.one{
+  background-color:red ;
+  height:650px;
+}
+
+.two{
+  background-color: rgb(48,146,205);
+  height:371px;
+}
+
+.three{
+  background-color: green;
+  height:371px;
+}
+
+.four{
+  background-color: purple;
+  height:371px;
+}
+
+.five{
+  background-color: pink;
+  height:371px;
+}
+
+.six{
+  background-color: rgb(48,146,205);
+  height:371px;
+}
+
+.seven{
+  background-color: red;
+  height:743px;
+}
+
+footer{
+  background-color: rgb(48,146,205);
+  height: 100px;
+}
