@@ -3,73 +3,210 @@ body {
         height: 3841px;
         margin: 0;
         border: solid pink 1px;
+        font-family: sans-serif;
       }
 
 header, footer,nav, div {
-              border: 1px solid black;
+              border: 0px solid black;
               padding: 0.25em;
               margin: 0.25em;
-              border-radius: 0.25em;
-            }
 
+}
 
+div{
+  display:flex;
+
+}
+
+h1{
+  width: 60%;
+  text-align: center;
+}
+
+h2{
+  font-weight:lighter;
+}
 
 header{
   height: 63px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  background-color: rgb(69,73,78);
+  margin: 0;
 }
 
 header ul{
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 50%;
+  font-family: sans-serif;
+
+}
+.nav{
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 600px;
+  margin: 0 -30px;
 
 }
 
+.logo {
+  color:white;
+  font-size: 40px;
+}
+
 .logo{
-  
+
 }
 
 footer{
   height: 63px;
 }
 .one{
-  background-color:red ;
+
+  background-image:url(/home/tpaparazzo/becode_projects/Exercices-HTML5/Exercice_5_reproduction/images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: 180%; /*zoom in the pic */
+  background-position: -200px -330px; /*  */
+  padding:0;
+  margin:0;
   height:650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
+
+
+
+
 }
 
+.one h1, h2, p {
+  z-index: 5;
+}
+
+.one::before{
+  background-color: rgba(69,73,78,0.5); /*darkslategrey*/
+  content:'';
+  display: block;
+  position:absolute;
+  margin:0 0;
+  height:658px;
+  width: 1280px;
+  z-index:0;
+}
+
+a{
+  text-align: center;
+}
+
+button{
+  border: solid rgb(0,159,207) 2px;
+  border-radius: 8px;
+  width: 60%;
+  color: rgba(0,159,207,1);
+  background-color: transparent;
+  z-index:6;
+  font-weight: bold;
+}
+
+
+
+/*
+button :visited{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+} */
+
 .two{
-  background-color: rgb(48,146,205);
+  background-color: rgb(0,159,207); /*blue*/
   height:371px;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .three{
-  background-color: green;
+  background-color: rgb(247,247,247); /*whitesmoke*/
   height:371px;
+  margin:0;
+  display:flex;
+  flex-direction: row;
+}
+
+.roundbutton{
+  border-radius:50%;
+  height:20px;
+  width:auto;
+}
+
+.linkbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .four{
-  background-color: purple;
+  background-color: white;
   height:371px;
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
+.rightcolumn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftcolumn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*
+.rightcolumn img{
+align-self:center;
+}*/
 .five{
-  background-color: pink;
+  background-color: rgb(69,73,78); /*darkslategrey*/
   height:371px;
+  margin:0;
 }
 
 .six{
   background-color: rgb(48,146,205);
   height:371px;
+  margin:0;
 }
 
 .seven{
   background-color: red;
   height:743px;
+  margin:0;
 }
 
 footer{
   background-color: rgb(48,146,205);
   height: 100px;
+  margin:0;
 }
