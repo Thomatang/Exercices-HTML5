@@ -3,13 +3,15 @@ body {
         height: 3841px;
         margin: 0;
         border: solid pink 1px;
-        font-family: sans-serif;
+        font-family:'Open Sans', sans-serif;
+
       }
 
 header, footer,nav, div {
               border: 0px solid black;
               padding: 0.25em;
               margin: 0.25em;
+              font-family:'Open Sans', sans-serif;
 
 }
 
@@ -108,7 +110,7 @@ a{
   text-align: center;
 }
 
-button{
+.one button{
   border: solid rgb(0,159,207) 2px;
   border-radius: 8px;
   width: 60%;
@@ -133,6 +135,7 @@ button :visited{
 
 .two{
   background-color: rgb(0,159,207); /*blue*/
+
   height:371px;
   margin:0;
   display: flex;
@@ -140,6 +143,27 @@ button :visited{
   justify-content: center;
   align-items: center;
 }
+
+.two p{
+  margin:0;
+  color:rgba(0,0,0,0.4);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.two h1{
+  margin-top:10px;
+  color:rgba(0,0,0,0.4);
+  font-weight:lighter;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .three{
   background-color: rgb(247,247,247); /*whitesmoke*/
@@ -147,24 +171,59 @@ button :visited{
   margin:0;
   display:flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(164,178,183);
 }
 
-.roundbutton{
+#roundbutton{
   border-radius:50%;
-  height:20px;
-  width:auto;
+  border:none;
+  color: white;
+  font-size: 35px ;
+  height:50px;
+  width:50px;
+  background-color: rgb(164,178,183);
+  text-decoration: none;
 }
+
 
 .linkbox{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80%;
 }
+
+.linkbox h1{
+  margin:0;
+  width: 100%;
+}
+
+.linkbox h2 {
+  margin: 0 0 20px 0;
+}
+
+
+
+#rectanglebutton{
+  border: solid rgb(0,159,207) 1px;
+  border-radius: 25px;
+  width: 100%;
+  height:30px;
+  padding: 1px 30px;
+  color: rgba(0,159,207,1);
+  background-color: transparent;
+  font-weight: bold;
+
+}
+
+
 
 .four{
   background-color: white;
-  height:371px;
+  height:700px;
   margin:0;
   display: flex;
   flex-direction: row;
@@ -175,6 +234,12 @@ button :visited{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
+}
+
+.rightcolumn img {
+  width: auto;
+  height: 50%;
 }
 
 .leftcolumn{
@@ -182,31 +247,105 @@ button :visited{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 50%;
+  flex-wrap: nowrap;
 }
-/*
-.rightcolumn img{
-align-self:center;
-}*/
+
+.leftcolumn h1,h2,p{
+  width:80%;
+  text-align: left;
+  margin: 5px 0px;
+
+}
+
+.leftcolumn h1{
+  font-weight: lighter;
+}
+.leftcolumn h2{
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.leftcolumn h2 a{
+  text-decoration: none;
+  color: rgb(0,159,207);
+}
+.leftcolumn p {
+  color: rgb(164,178,183);
+}
+
 .five{
   background-color: rgb(69,73,78); /*darkslategrey*/
   height:371px;
   margin:0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+
+
+
+}
+
+.rightcolumn5{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+
+.leftcolumn5{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color:white;
+}
+
+.leftcolumn5 span {
+  color: rgb(0,159,207);
 }
 
 .six{
   background-color: rgb(48,146,205);
   height:371px;
   margin:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .seven{
-  background-color: red;
+  background-color: white;
   height:743px;
   margin:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer{
-  background-color: rgb(48,146,205);
+  background-color: rgb(69,73,78);
   height: 100px;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
   margin:0;
 }
