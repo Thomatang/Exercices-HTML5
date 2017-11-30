@@ -91,7 +91,7 @@ footer{
   text-align: center;
   margin-top: 30px;
 }
-.one a:hover{
+.one a button:hover{
   background-color: gold;
   cursor: crosshair;
 }
@@ -213,6 +213,10 @@ button :visited{
 
 }
 
+#rectanglebutton:hover{
+  background-color: gold;
+  cursor: crosshair;
+}
 
 
 .four{
@@ -267,6 +271,12 @@ button :visited{
 }
 .leftcolumn p {
   color: rgb(164,178,183);
+}
+
+.containerltc{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
 }
 
 .five{
@@ -437,6 +447,7 @@ footer{
 
 footer p{
   margin:0;
+  text-align: center;
 }
 
 #footerp2 {
