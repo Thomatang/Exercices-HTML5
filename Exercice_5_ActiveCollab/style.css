@@ -1,0 +1,127 @@
+/* this page contains 7 sections; each section is one of either three sizes: Small, Medium or Large. Small sections have a height of */
+
+
+
+
+
+
+
+
+nav {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #e9edf3;
+}
+
+.navleftcolumn{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:40%;
+}
+
+.navrightcolumn{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+    width:40%;
+}
+
+.one {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e9edf3;/*kindawhite*/
+}
+
+.two{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #3f4655;  /*blackgrey*/
+}
+
+.three{
+
+  background-color: #e9edf3; /* kindawhite*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.four{
+
+  background-color: #e9edf3;
+  display: flex;
+  justify-content: center;
+}
+
+.picresize{
+  width:365px;
+  height:206px;
+}
+
+.five{
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowerrow{
+  display: flex;
+  flex-direction: row;
+}
+.six{
+
+  background-color: #e9edf3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seven{
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seven form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eight {
+  background-color: #3f4655;  /*blackgrey*/
+}
+
+.eightrow1{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+}
+.eightrow2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.eightrow3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
