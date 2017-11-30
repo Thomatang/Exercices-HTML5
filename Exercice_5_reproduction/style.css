@@ -27,6 +27,7 @@ h1{
 
 h2{
   font-weight:lighter;
+
 }
 
 header{
@@ -35,7 +36,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(69,73,78);
+  background-color: #373e46; /* dark grey */
   margin: 0;
 }
 
@@ -63,17 +64,16 @@ header ul{
   font-size: 40px;
 }
 
-.logo{
 
-}
 
 footer{
   height: 63px;
 }
 .one{
 
-  background-image:url(/home/tpaparazzo/becode_projects/Exercices-HTML5/Exercice_5_reproduction/images/home.jpg);
-  background-repeat: no-repeat;
+  background:url('/home/tpaparazzo/becode_projects/Exercices-HTML5/Exercice_5_reproduction/images/home.jpg'),rgba(0,159,207,0.5); /*bright blue */
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(27,40,50,0.5);
   background-size: 180%; /*zoom in the pic */
   background-position: -200px -330px; /*  */
   padding:0;
@@ -85,38 +85,27 @@ footer{
   justify-content: center;
   align-items: center;
   color:white;
-
-
-
-
 }
 
-.one h1, h2, p {
-  z-index: 5;
-}
-
-.one::before{
-  background-color: rgba(69,73,78,0.5); /*darkslategrey*/
-  content:'';
-  display: block;
-  position:absolute;
-  margin:0 0;
-  height:658px;
-  width: 1280px;
-  z-index:0;
-}
-
-a{
+.one a{
   text-align: center;
+  margin-top: 30px;
+}
+.one h2{
+  width:750px;
+  text-align: center;
+  font-weight: lighter;
+  font-size:  20px;
+  margin-top: 0px;
 }
 
 .one button{
-  border: solid rgb(0,159,207) 2px;
+  border: solid #43a9d2 2px;
   border-radius: 8px;
-  width: 60%;
-  color: rgba(0,159,207,1);
-  background-color: transparent;
-  z-index:6;
+  width: 250px;
+  height: 40px;
+  color: #43a9d2;
+  background-color:transparent ;
   font-weight: bold;
 }
 
@@ -134,7 +123,7 @@ button :visited{
 } */
 
 .two{
-  background-color: rgb(0,159,207); /*blue*/
+  background-color: #39a1d1; /*blue*/
 
   height:371px;
   margin:0;
@@ -185,6 +174,7 @@ button :visited{
   width:50px;
   background-color: rgb(164,178,183);
   text-decoration: none;
+  text-align: center;
 }
 
 
@@ -276,7 +266,7 @@ button :visited{
 }
 
 .five{
-  background-color: rgb(69,73,78); /*darkslategrey*/
+  background-color: #373e46; /*darkslategrey*/
   height:371px;
   margin:0;
   display: flex;
@@ -285,13 +275,7 @@ button :visited{
   justify-content: space-around;
 }
 
-form{
-  display: flex;
-  flex-direction: column;
 
-
-
-}
 
 .rightcolumn5{
   height: 100%;
@@ -300,6 +284,52 @@ form{
   align-items: center;
   width: 50%;
 }
+
+.rightcolumn5 form{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 140px;
+  background-color: #444d57;
+  border-radius: 9px;
+  width: 50%;
+}
+
+.rightcolumn5 a{
+  margin-top: 20px;
+}
+
+.rightcolumn5 a:hover{
+
+  background-color: gold;
+}
+
+#rectanglebutton2{
+  border: solid #39a1d1 1px;
+  border-radius: 9px;
+  background-color: #39a1d1;
+  width: 300px;
+  height:30px;
+  padding: 1px 30px;
+  color: white;
+  font-weight: bold;
+  margin-left: 5px ;
+  margin-right:5px ;
+
+}
+
+#rectanglebutton2:hover{
+  cursor: crosshair;
+}
+
+#emailinput{
+  margin-top: 3px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 
 
 .leftcolumn5{
@@ -310,30 +340,83 @@ form{
   width: 50%;
   color:white;
 }
+.leftcolumn5 h1{
+  width:100%;
+  font-weight: lighter;
+}
 
 .leftcolumn5 span {
   color: rgb(0,159,207);
 }
 
 .six{
-  background-color: rgb(48,146,205);
+
+  background:url('/home/tpaparazzo/becode_projects/Exercices-HTML5/Exercice_5_reproduction/images/home.jpg'),rgba(0,159,207,0.5); /*bright blue */
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(67,169,210,0.5);
   height:371px;
   margin:0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgb(242,247,252);/* kinda white*/
+
+}
+
+.six h2,p {
+  text-align: left;
+  width:600px;
+
+}
+.six p {
+  font-size: 13px;
+  color: rgba(242,247,252,0.8); /* kinda white */
 
 }
 
 .seven{
-  background-color: white;
-  height:743px;
+  background-color: #f2f7fc;
+  height:700px;
   margin:0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.flexcontainer{
+  width: 600px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.seven h2{
+  width:600px;
+  font-weight: bolder;
+  color: #424242; /* black , not exactly*/
+  margin-bottom: 0px;
+}
+.seven p{
+  width:600px;
+  font-weight: lighter;
+  color:#adb0b2; /* kinda white */
+  margin-top: 0px;
+}
+
+.seven button{
+  margin-top: 20px;
+  border: solid #39a1d1 1px;
+  border-radius: 7px;
+  background-color: #39a1d1;
+  width: 300px;
+  height: 50px;
+  padding: 1px 30px;
+  color: white;
+  font-weight: bold;
+
 }
 
 footer{
@@ -344,8 +427,14 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color:white;
+  font-weight: lighter;
 }
 
 footer p{
   margin:0;
+}
+
+#footerp2 {
+  width: 800px;
 }
