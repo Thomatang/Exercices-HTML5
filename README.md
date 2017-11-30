@@ -2,7 +2,7 @@
 
 
 Exercice 1: Animations
-Check out my work about Animations [here](https://thomatang.github.io/Exercices-HTML5/)
+Check out my work about Animations [here](https://thomatang.github.io/Exercices-HTML5/Exercice_1_Animations/)
 
 Exercice2:HTML TABLEs
 Check out my work on Tables [here](https://thomatang.github.io/Exercices-HTML5/)
