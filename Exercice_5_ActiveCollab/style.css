@@ -1,31 +1,93 @@
 /* this page contains 7 sections; each section is one of either three sizes: Small, Medium or Large. Small sections have a height of */
 
+html{
+  background-color: #e9edf3;
 
+}
 
+*{
+  font-family: 'Lato', sans-serif;
+}
 
+body{
 
+  margin:0;
+  box-sizing: border-box;
 
-
+}
 
 nav {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #e9edf3;
+  width: 100%;
+  text-shadow: 3px 3px #e9edf4;
+
 }
 
 .navleftcolumn{
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-  width:40%;
+  width:350px;
+  font-size: 12px;
 }
 
 .navrightcolumn{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-    width:40%;
+  align-items: center;
+    width:350px;
+    font-size: 12px;
+}
+
+
+.navrightcolumn button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 170px;
+  border-radius: 8px;
+  border: solid black 1px;
+  height: 40px;
+  padding:0;
+  overflow: hidden;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navrightcolumn a{
+  text-decoration: none;
+}
+
+.signinbutton button:hover{
+  background-color: gold;
+  cursor:pointer;
+}
+.buttonleft{
+  background-color: #3f9af8;
+  height: 38px;
+  width: 85px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.buttonright{
+  background-color: white;
+  border-left: solid black 1px;
+ padding-left: 3px;
+ height:38px;
+ width:85px;
+ font-weight: 14px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .one {
@@ -33,6 +95,13 @@ nav {
   flex-direction: row;
   justify-content: center;
   background-color: #e9edf3;/*kindawhite*/
+  width: 100%;
+  font-size:25px;
+
+}
+
+.one p{
+    text-shadow: 1px 1px white;
 }
 
 .two{
@@ -40,6 +109,39 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   background-color: #3f4655;  /*blackgrey*/
+  width: 100%;
+  height: 280px;
+}
+
+.columncontainer {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+}
+
+.two h2{
+  color:white;
+  font-weight: bold;
+}
+
+.two p{
+  color: #b2b5bc;
+  font-size: 12px;
+}
+
+.two .column{
+  width: 250px;
+  border-right: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#noborder{
+  border-right: none;
 }
 
 .three{
@@ -49,18 +151,59 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.largep{
+  height: 80px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color:#35322b; /*blackish*/
+  font-weight: 500;
+  text-shadow: 1px 1px #e9edf3;
+}
+
+.tryitfree{
+  background-color: #3f9af8;
+  height: 38px;
+  width: 250px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:solid black 1px;
+  border-radius: 8px;
+
+}
+.tryitfree:hover{
+  background-color: gold;
+  cursor: pointer;
+}
+
+.mini {
+  font-size: 8px;
+  height: 10px;
+
 }
 
 .four{
 
-  background-color: #e9edf3;
+  background: #e9edf3 url('images/onepager-03-background-printscreen.svg');
+  background-size:contain;
+  /*background-image: url("images/onepager-03-background-printscreen.svg")*/
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .picresize{
-  width:365px;
-  height:206px;
+  width:600px;
+  height:300px;
 }
 
 .five{
@@ -72,9 +215,69 @@ nav {
   align-items: center;
 }
 
+.upperrow{
+  width:600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.upperrow p{
+  font-weight:580;
+  text-shadow: 2px 2px #e9edf4;
+}
 .lowerrow{
   display: flex;
   flex-direction: row;
+  width:600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 2px #e9edf3;
+  margin-bottom: 60px;
+}
+
+
+.lowerrow button {
+  background-color: #3f9af8;
+  height: 25px;
+  width: 130px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:solid white 1px;
+  border-radius: 8px;
+  padding:0;
+}
+
+.lowerrow button:hover{
+  background-color: gold;
+  cursor: pointer;
+}
+
+.fiveleftcolumn{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 300px;
+
+}
+
+.fiverightcolumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border-left: solid #dbdbdb 1px;
 }
 .six{
 
@@ -84,38 +287,129 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
+.six p{
+  text-align: center;
+}
 .seven{
 
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  height: 650px;
+}
+
+.formcontainer{
+  background-color: #e9edf3; /*whiteblue*/
+  border: solid grey 2px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+
 }
 
 .seven form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 400px;
+}
+
+.seven form input{
+  width: 340px;
+  height:30px;
+  border-radius:5px;
+  border: solid grey 1px;
+}
+
+.seven form label {
+  font-weight: bold;
+  width:344px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.seven p{
+  font-weight:580;
+  text-shadow: 2px 2px #e9edf4;
+}
+
+.seven form p{
+  font-weight:bold;
+  font-size: 12px;
+  text-shadow: 2px 2px white;
+}
+
+.inputbutton {
+  background-color: #3f9af8;
+  height: 35px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:solid grey 1px;
+  border-radius: 8px;
+  padding:0;
+  margin-top: 30px;
+}
+
+.inputbutton:hover{
+  background-color: gold;
+  cursor: pointer;
+}
+
+.security{
+color: grey;
+font-size: 10px;
+margin-top:-30px;
+
+}
+.eight {
+  background-color: #3f4655;  /*blackgrey*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.eight {
-  background-color: #3f4655;  /*blackgrey*/
-}
-
 .eightrow1{
 display: flex;
 flex-direction: row;
-align-items: center;
-justify-content: center;
+align-items: flex-start;
+justify-content:space-around;
+color: white;
+width:1000px;
+margin-right: 0;
+}
 
+.eightrow1 h3{
+  color:grey;
+}
+
+.row1col{
+  width: 100px;
+  font-size: 10px;
 }
 .eightrow2{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+ color: #b0b5c0;
+ font-size: 40px;
+ width: 400px;
+}
 
+.eightrow2 i{
+  margin: 5px 5px;
 }
 
 .eightrow3{
@@ -123,5 +417,6 @@ justify-content: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+ color: grey;
+ font-size: 10px;
 }

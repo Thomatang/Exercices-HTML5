@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://use.fontawesome.com/c9d3cd7efa.js"></script>
     <title>Active Collab Reproduction</title>
@@ -21,7 +22,11 @@
                 <p>Help & Support</p>
                 <p>Blog</p>
                 <p>Resources</p>
-                <div><button>Try It Free</button><button>Sign In</button>
+                <div class="signinbutton"><a href="https://github.com/Thomatang"><button>
+                          <div class="buttonleft"> Try It Free</div>
+                          <div class="buttonright">Sign In</div>
+                      </button>
+                    </a>
               </div>
         </nav>
 
@@ -31,36 +36,38 @@
         </div>
 
         <div class="two">
-              <div class="row">
-                <img src="images/onepager-03-logo.svg">
+            <div class="columncontainer">
+              <div class="column">
+                <img src="images/onepager-03-monthly-plan.svg">
                 <h2>Task Management</h2>
                 <p>Stay organized with an advanced to-do<br/>list and track your project</p>
               </div>
-              <div class="row">
-                <img src="images/onepager-03-logo.svg">
-                <h2>Task Management</h2>
+              <div class="column">
+                <img src="images/onepager-03-self-hosted.svg">
+                <h2>Team Collaboration</h2>
                 <p>Stay organized with an advanced to-do<br/>list and track your project</p>
               </div>
-              <div class="row">
-                <img src="images/onepager-03-logo.svg">
-                <h2>Task Management</h2>
+              <div class="column">
+                <img src="images/onepager-03-monthly-plan.svg">
+                <h2>Time Tracking</h2>
                 <p>Stay organized with an advanced to-do<br/>list and track your project</p>
               </div>
-              <div class="row">
-                <img src="images/onepager-03-logo.svg">
-                <h2>Task Management</h2>
+              <div class="column" id="noborder">
+                <img src="images/onepager-03-self-hosted.svg">
+                <h2>Invoicing</h2>
                 <p>Stay organized with an advanced to-do<br/>list and track your project</p>
               </div>
-
+            </div>
         </div>
 
         <div class="three">
-            <p>Active Collab helps your team stay organized when you outgrow<br/>email. But it's so much more than that-with plenty of neat<br/>add-ons, it's a one-stop solution for all your business needs.</p>
-            <button>Try it free for 30 days!</button>
-            <p> No credit card required, unsubscribe at any time.</p>
+            <p class="largep">Active Collab helps your team stay organized when you outgrow<br/>email. But it's so much more than that-with plenty of neat<br/>add-ons, it's a one-stop solution for all your business needs.</p>
+            <button class="tryitfree">Try it free for 30 days!</button>
+            <p class="mini"> No credit card required, unsubscribe at any time.</p>
         </div>
 
         <div class="four">
+
           <img src="images/onepager-03-printscreen.png" class="picresize">
         </div>
 
@@ -75,14 +82,14 @@
                         <h2>Monthly Plans</h2>
                         <p>In the cloud<br/>No setup required<br/>Ready in 2 minutes</p>
                         <button>Plans & Pricing</button>
-                        <p>from $25/month</p>
+                        <p><i>from $25/month</i></p>
                     </div>
                     <div class="fiverightcolumn">
                         <img src="images/onepager-03-self-hosted.svg">
                         <h2>Self-Hosted</h2>
                         <p>Installs on your own server<br/>Unlimited team members<br/>One year of support included</p>
                         <button>Self-Hosted Pricing</button>
-                        <p>one time fee-from $999</p>
+                        <p><i>one time fee-from $999</i></p>
                     </div>
 
               </div>
@@ -99,26 +106,30 @@
         <div class="seven">
             <h1>Get Started with Active Collab</h1>
             <p>Enter your details to get a month of Active Collab<br/>absolutely free, without any limitations.</p>
-            <form>
-                <label for="orgname">Your Name or Organization</label>
-                <input type="text" name="firstname" placeholder="Enter name or organization">
+                <div class="formcontainer">
+                    <form>
+                        <label for="orgname">Your Name or Organization</label>
+                        <input type="text" name="firstname" placeholder="Enter name or organization">
 
-                <label for="email">Email</label>
-                <input type="text" name="Email" placeholder="name@organization.com">
+                        <label for="email">Email</label>
+                        <input type="text" name="Email" placeholder="name@organization.com">
 
-                <label for="password">Password</label>
-                <input type="text" name="Password" placeholder="The longer, the stronger">
+                        <label for="password">Password</label>
+                        <input type="text" name="Password" placeholder="The longer, the stronger">
 
-                <input type="submit" value="Start my free month!">
-                <p>Hope you'll enjoy it!</p>
-            </form>
-            <p> Your data is safe with us</p>
-            <p>Active Collab security</p>
+                        <input type="submit" value="Start my free month!"class="inputbutton">
+                        <p>Hope you'll enjoy it!</p>
+                   </form>
+                </div>
+                 <div class="security">
+                        <p> Your data is safe with us</p>
+                        <p><u>Active Collab security</u></p>
+                 </div>
         </div>
 
         <div class="eight">
               <div class="eightrow1">
-                  <div class="row1col1">
+                  <div class="row1col">
                     <h3>Product</h3>
                     <p>Features</p>
                     <p>All Features</p>
@@ -128,55 +139,51 @@
                     <p>Timer</p>
                     <p>Mobile Apps</p>
                   </div>
-                  <div class="row1col1">
-                    <h3>Product</h3>
-                    <p>Features</p>
-                    <p>All Features</p>
-                    <p>Pricing</p>
-                    <p>Add-ons</p>
-                    <p>Roadmap</p>
-                    <p>Timer</p>
-                    <p>Mobile Apps</p>
+                  <div class="row1col">
+                    <h3>Alternative</h3>
+                    <p>Best Project Management Tools Comparison</p>
+                    <p>Basecamp Alternative</p>
+                    <p>Trello Alternative</p>
+                    <p>Asana Alternative</p>
+                    <p>Teamwork Alternative</p>
+                    <p>Wrike ALternative</p>
+                    <p>JIRA Alternative</p>
                   </div>
-                  <div class="row1col1">
-                    <h3>Product</h3>
-                    <p>Features</p>
-                    <p>All Features</p>
+                  <div class="row1col">
+                    <h3>Solution</h3>
+                    <p>Task Management</p>
+                    <p>Thing of Beauty</p>
                     <p>Pricing</p>
                     <p>Add-ons</p>
-                    <p>Roadmap</p>
+                    <p>Cherrypie</p>
                     <p>Timer</p>
-                    <p>Mobile Apps</p>
+                    <p>Client Management</p>
                   </div>
-                  <div class="row1col1">
-                    <h3>Product</h3>
-                    <p>Features</p>
-                    <p>All Features</p>
-                    <p>Pricing</p>
-                    <p>Add-ons</p>
-                    <p>Roadmap</p>
-                    <p>Timer</p>
-                    <p>Mobile Apps</p>
+                  <div class="row1col">
+                    <h3>For Teams</h3>
+                    <p>Marketing</p>
+                    <p>Designers</p>
+                    <p>Web Design</p>
+                    <p>Web Development</p>
+                    <p>Startups</p>
+                    <p>SEO Agencies</p>
+                    <p>Small Business</p>
                   </div>
-                  <div class="row1col1">
-                    <h3>Product</h3>
-                    <p>Features</p>
-                    <p>All Features</p>
-                    <p>Pricing</p>
-                    <p>Add-ons</p>
-                    <p>Roadmap</p>
-                    <p>Timer</p>
-                    <p>Mobile Apps</p>
+                  <div class="row1col">
+                    <h3>Company</h3>
+                    <p>About & Contact</p>
+                    <p>Careers</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                    <p>Security</p>
+
                   </div>
-                  <div class="row1col1">
-                    <h3>Product</h3>
-                    <p>Features</p>
-                    <p>All Features</p>
-                    <p>Pricing</p>
-                    <p>Add-ons</p>
-                    <p>Roadmap</p>
-                    <p>Timer</p>
-                    <p>Mobile Apps</p>
+                  <div class="row1col">
+                    <h3>Project Management Guides</h3>
+                    <p>Blog</p>
+                    <p>Newsletter</p>
+                    <p>Help & Support</p>
+
                   </div>
               </div>
 
